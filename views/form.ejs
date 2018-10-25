@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Send Email</title>
+    <style>
+
+        body,.wrapper {
+            text-align: center;
+            margin:auto;
+        }
+
+        form {
+            text-align: center;
+            margin:0 auto;
+        }
+    .wrapper{
+        margin-top:80px;
+        width:400px;
+        height:95%;
+        text-align: center;
+        background: rgb(245, 163, 163);
+        padding:80px 0;
+        border-radius: 60px 0 60px 0;
+        border:2px solid black;
+    }
+
+    .wrapper > form input,textarea {
+        display: block;
+        margin: auto;
+        margin-top:30px;
+    }
+
+    footer{
+        background: rgb(204, 201, 201);
+        height: 200px;
+        position: relative;
+        text-align: center;
+        margin-top:61px;
+    }
+    
+    footer > h4{
+        position: absolute;
+        top:50px;
+        left:500px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NodeMailer Sending Email NodeJS</h1>
+    </header>
+    <div class='wrapper'>
+        <form action="/sendEmail" method="POST" enctype="application/x-www-form-urlencoded">        
+            <input type="text" name='receiverEmail' placeholder="Recepient Email">
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Submit">
+         </form>
+    </div>
+    <footer>
+        <h4>Dont use this for doing any Atraafi</h4>
+    </footer>
+</body>
+</html>
